@@ -1,53 +1,59 @@
-## 🛠️ Technical Requirements
 
-### Database Management
-- Use a relational database such as PostgreSQL or MySQL.
-- Required tables:
-  - Users (guests and hosts)
-  - Properties
-  - Bookings
-  - Reviews
-  - Payments
 
-### API Development
-- Use RESTful APIs to expose backend functionalities to the frontend.
-- Include proper HTTP methods and status codes for:
-  - GET (retrieve data)
-  - POST (create data)
-  - PUT/PATCH (update data)
-  - DELETE (remove data)
-- Use GraphQL for complex data fetching scenarios (optional but recommended).
+1. User Authentication & Management
+- Register/Login (email, social)
+- Password Hashing & Reset
+- JWT/Session Management
+- Role-based Access Control (Admin, Host, Guest)
+- Email Verification
+- Profile Management (Name, Bio, Photo, etc.)
 
-### Authentication and Authorization
-- Use JWT for secure user sessions.
-- Implement role-based access control (RBAC) to differentiate permissions between:
-  - Guests
-  - Hosts
-  - Admins
+2. Property Management
+- Add/Edit/Delete Property
+- Property Schema: title, description, address, geolocation, amenities, images
+- Availability Calendar
+- Pricing Model (base price, seasonal pricing, extra guest fee, cleaning fee)
+- Property Approval (admin moderation)
 
-### File Storage (Scenario based)
-- Store property images and user profile photos in cloud storage solutions such as AWS S3 or Cloudinary. For implementation, we will use file storage
+3. Search & Discovery
+- Location-based Search (Geo queries)
+- Filters: Price, Date, Type, Amenities
+- Pagination & Sorting
+- Saved Listings (Favorites/Wishlist)
 
-### Third-Party Services
-- Use email services like SendGrid or Mailgun for email notifications.
+4. Booking System
+- Booking Request (Instant or Manual Approval)
+- Availability Check
+- Date Locking on Booking
+- Cancellation Policies
+- Booking History (Host & Guest)
+- Notifications (email/SMS/push)
 
-### Error Handling and Logging
-- Implement global error handling for APIs.
+5. Payments
+- Integration with Stripe/PayPal
+- Secure Payment Handling
+- Escrow System (hold and release payments)
+- Commission/Service Fee Calculation
+- Refunds & Cancellations
+- Transaction History
 
-## 🚀 Non-Functional Requirements
+6. Reviews & Ratings
+- One-time Post-Stay Review
+- Star Ratings (Cleanliness, Accuracy, Communication, etc.)
+- Moderation (Flag/report reviews)
 
-###Scalability
-- Use a modular architecture to ensure the app scales easily as traffic increases.
-Enable horizontal scaling using load balancers.
+7. Messaging System
+- Real-time Chat (WebSocket or polling)
+- Message Storage
+- Notification on New Messages
+- Spam/Abuse Filtering
 
-### Security
-- Secure sensitive data (e.g., passwords, payment information) using encryption.
-- Implement firewalls and rate limiting to prevent malicious activities.
 
-### Performance Optimization
-- Use caching tools like Redis to improve response times for frequently accessed data (e.g., search results).
-- Optimize database queries to reduce server load.
+8. Admin Panel
+- User Management (Ban, Verify, Reset)
+- Property Review & Approval
+- Booking Oversight
+- Financial Reporting
+- Dispute Resolution
 
-### Testing
-- Implement unit and integration tests using frameworks like pytest .
-- Include automated API testing to ensure endpoints function as expected.
+
