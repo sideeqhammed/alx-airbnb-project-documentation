@@ -1,5 +1,5 @@
 
-Examples of user stories based on the [user case diagram](https://github.com/sideeqhammed/alx-airbnb-project-documentation/blob/main/use-case-diagram/README.md)
+Examples of user stories based on the [user case diagram](https://github.com/sideeqhammed/alx-airbnb-project-documentation/blob/main/use-case-diagram/alx-booking-uc.png)
 
 1. As a customer, I want to create an account so that I can access hotel booking services.
 
